@@ -1,3 +1,11 @@
 h1 {
     color: red;
 }
+
+h2 {
+    color: #24ff53;
+}
+
+p {
+    color: linear(#dddddd #ff2424 #24ff53) ;
+}
