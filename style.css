@@ -14,7 +14,7 @@ body {
 
     font-family: 'Alegreya Sans', sans-serif;
 
-    height: 100vh;
+    height: 100%;
     width: 100%;
 
     border: 0.5em #ffffff;
@@ -23,13 +23,21 @@ body {
 h1 {
     color: #81a5bd;
     font-family: 'Aboreto';
-    font-weight: 400;
-    font-size: 800;
+    font-weight: bolder;
+    font-size:xx-large;
 }
 
 h2 {
     color: #338fcc;
-    font-weight: 400;
+    font-family: 'Aboreto';
+    font-weight: bold;
+}
+
+h3 {
+    color: #5e90b1;
+    font-family: 'Aboreto';
+    font-weight: bold;
+    font-size: larger;
 }
 
 p {
@@ -39,4 +47,35 @@ p {
 
 div {
     padding: 1em;
+}
+
+
+
+ul li {
+    margin: 0em;
+    padding: 0.2em;
+
+    text-align:start;
+    align-items:flex-start;
+
+    color: #81a5bd;
+}
+
+section {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+ul {
+    color: #81a5bd;
+    text-align: start;
+    margin: 0.2em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.experiences {
+    margin: 2.7em;
 }
