@@ -87,3 +87,7 @@ strong {
 .experiences {
     margin: 2.7em;
 }
+
+.title img {
+    width: 20%;
+}
