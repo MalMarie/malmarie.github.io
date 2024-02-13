@@ -1,21 +1,14 @@
-html {
-    background-color: #031520;
-    display: flex;
-}
-
 body {
-    margin: 0em 4em 1em 4em;
-    text-align: center;
-    align-items: center;
-    font-family: 'Oswald', sans-serif;
     height: 100vh;
-    width: 100%;
-    border: 0.5em #ffffff;
+    width: auto;
+    background: linear-gradient(#031520, #063553);
+    background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
 }
 
 h1 {
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
+    margin: 0.3em 0 0.3em 0;
     color: #338fcc;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: bolder;
@@ -33,29 +26,20 @@ h3 {
     color: #5e90b1;
     font-weight: bold;
     font-size: larger;
-    border-top: 0.6em;
-    border-color: #81a5bd;
+    border-top: solid 0.1em #81a5bd;
+    border-bottom: solid 0.1em #81a5bd;
 }
 
 p {
     color: #ffffff;
+    font-size: larger;
     font-weight: 400;
 }
 
 section {
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 2em;
-}
-
-section.cv {
-    width: 60vw;
-    margin: auto;
-    justify-content: center;
-    border-top: solid 3px #5e90b1;
-    margin-top: 5em;
-    padding-top: 5em;
-    border: solid 3px #5e90b1;
+    /* margin:  5em 0 5em 0; */
 }
 
 .flex-evenly {
@@ -66,32 +50,89 @@ section.cv {
     justify-content: space-evenly;
 }
 
-.flex-evenly>*{
+.flex-evenly>* {
     width: 300px;
 }
 
 .border {
     margin: 1em;
     padding: 2em;
-    border : solid 2px #5e90b1;
+    border: solid 2px #5e90b1;
 }
 
-section.cv>#experiences>ul>li>ul>li{
-list-style: circle;
+div.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3em;
 }
 
-section.cv>#skills>ul{
+div.title_av,
+div.title_webdev {
+    flex-direction: column;
+    gap: 30px;
+    transition: 150ms;
+}
+
+div.title_av a:hover,
+div.title_webdev a:hover {
+    color: #aebec9;
+    font-size: larger;
+    transition: 200ms;
+}
+
+.title img {
+    width: 35%;
+    border-radius: 5%;
+}
+
+.presentation-text {
+    width: 50vw;
     margin: auto;
-
-    /* flex-wrap: nowrap; */
+    padding: 0.5em;
+    /* background-color: #81a5bd; */
+    border: solid 2px #FFFFFF;
+    border-radius: 10px;
 }
 
-section.cv>#skills>ul>ul{
+section.cv {
+    width: 60vw;
+    margin: auto;
+    justify-content: center;
+    margin-top: 10em;
+    padding-top: 1em;
+    border: solid 3px #5e90b1;
+}
+
+.cv>h2 {
+    font-size: xx-large;
+}
+
+section.cv>#experiences>ul>li>ul>li {
+    list-style: circle;
+}
+
+section.cv>#skills>ul {
+    margin: auto;
+}
+
+section.cv>#skills>ul>ul {
     width: 100%;
 }
 
-div {
-    padding: 0.5em;
+section.cv>div#languages>ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.cv>div#hobbies>ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 a {
@@ -105,51 +146,19 @@ ul {
     list-style: none;
 }
 
-div>ul>li {
-    color: #81a5bd;
-}
-
 li a {
     color: #5e90b1;
     text-decoration: none;
+    transition: 150ms;
 }
 
+li a:hover {
+    color: #aebec9;
+    font-size: larger;
+    transition: 150ms;
+}
 
-strong {
+em {
+    font-style: normal;
     font-weight: 700;
-}
-
-div .title {
-    text-align: center;
-    flex-direction: row;
-    vertical-align: middle;
-    align-items: flex-start;
-
-}
-
-div .title_av {
-    flex-direction: column;
-    justify-content: space-between;
-    vertical-align: middle;
-    float: right;
-    margin-top: 3em;
-    margin-left: 0.5em;
-    padding: 0em;
-}
-
-div .title_webdev {
-    flex-direction: column;
-    justify-content: space-between;
-    vertical-align: middle;
-    float: left;
-    margin-top: 8em;
-    margin-left: 0.8em;
-    padding: 0em;
-}
-
-.title img {
-    width: 35%;
-    border-radius: 2%;
-    border-color: rgba(0, 0, 0, 0.4);
-    border-top: 10em;
 }
