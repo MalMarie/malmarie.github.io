@@ -154,15 +154,19 @@ em {
 @media (max-width: 1023px) {
     h1 {
         font-weight: bold;
-        font-size: 4em;
+        font-size: 10em;
     }
 
     h2 {
-        font-size: medium;
+        font-size: large;
     }
 
     h3 {
-        font-size: large;
+        font-size: larger;
+    }
+
+    p {
+        font-size: larger;
     }
 
     .list {
@@ -203,8 +207,12 @@ em {
         font-size: larger;
     }
 
-    li a:hover {
+    li {
         font-size: large;
+    }
+
+    li a:hover {
+        font-size: larger;
     }
 
 }
