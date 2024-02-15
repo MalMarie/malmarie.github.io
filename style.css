@@ -8,11 +8,9 @@ body {
 }
 
 h1 {
-    margin: 0.3em 0 0.3em 0;
     color: #338fcc;
     font-family: 'Bebas Neue', sans-serif;
-    font-weight: bolder;
-    font-size: 12em;
+    margin: 0.3em 0 0.3em 0;
 }
 
 h2 {
@@ -25,21 +23,19 @@ h2 {
 h3 {
     color: #5e90b1;
     font-weight: bold;
-    font-size: larger;
     border-top: solid 0.1em #81a5bd;
     border-bottom: solid 0.1em #81a5bd;
 }
 
 p {
     color: #ffffff;
-    font-size: larger;
+    font-size: large;
     font-weight: 400;
 }
 
 section {
     flex-wrap: wrap;
     justify-content: flex-start;
-    /* margin:  5em 0 5em 0; */
 }
 
 .flex-evenly {
@@ -60,61 +56,41 @@ section {
     border: solid 2px #5e90b1;
 }
 
-.space-around {
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 div.title {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 3em;
 }
 
 div.title_av,
 div.title_webdev {
-    flex-direction: column;
-    gap: 30px;
     transition: 150ms;
 }
 
 div.title_av a:hover,
 div.title_webdev a:hover {
     color: #aebec9;
-    font-size: larger;
     transition: 200ms;
 }
 
 .title img {
-    width: 35%;
     border-radius: 5%;
 }
 
 .presentation-text {
-    width: 50vw;
     margin: auto;
     padding: 0.5em;
-    /* background-color: #81a5bd; */
     border: solid 2px #FFFFFF;
     border-radius: 10px;
 }
 
 section.cv {
-    width: 60vw;
     margin: auto;
     justify-content: center;
     padding-top: 1em;
     border: solid 3px #5e90b1;
     margin-top: 5em;
     margin-bottom: 5em;
-}
-
-.cv>h2 {
-    font-size: xx-large;
 }
 
 section.cv>#experiences>ul>li>ul>li {
@@ -127,6 +103,24 @@ section.cv>#skills>ul {
 
 section.cv>#skills>ul>ul {
     width: 100%;
+}
+
+.download-cv {
+    margin-bottom: 5em;
+}
+
+.download-cv button {
+    border: solid 2px #031520;
+    border-radius: 5px;
+    background-color: #5e90b1;
+    padding: 1em;
+}
+
+.download-cv button a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
 }
 
 a {
@@ -148,11 +142,125 @@ li a {
 
 li a:hover {
     color: #aebec9;
-    font-size: larger;
     transition: 150ms;
 }
 
 em {
     font-style: normal;
     font-weight: 700;
+}
+
+/* Layout for smartphones and tablets */
+@media (max-width: 1023px) {
+    h1 {
+        font-weight: bold;
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+
+    h3 {
+        font-size: large;
+    }
+
+    .list {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div.title {
+        flex-direction: column;
+        margin: 2em;
+    }
+
+    div.title_av,
+    div.title_webdev {
+        gap: 10px;
+    }
+
+    div.title_av a:hover,
+    div.title_webdev a:hover {
+        font-size: large;
+    }
+
+    .title img {
+        width: 45%;
+    }
+
+    .presentation-text {
+        width: 70vw;
+    }
+
+    section.cv {
+        width: 80vw;
+    }
+
+    .cv>h2 {
+        font-size: larger;
+    }
+
+    li a:hover {
+        font-size: large;
+    }
+
+}
+
+/* Layout for desktop */
+@media (min-width: 1024px) {
+    h1 {
+        font-weight: bolder;
+        font-size: 12em;
+    }
+
+    h3 {
+        font-size: larger;
+    }
+
+    .space-around {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    div.title {
+        flex-direction: row;
+        margin: 3em;
+    }
+
+    div.title_av,
+    div.title_webdev {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    div.title_av a:hover,
+    div.title_webdev a:hover {
+        font-size: larger;
+    }
+
+    .title img {
+        width: 35%;
+    }
+
+    .presentation-text {
+        width: 50vw;
+    }
+
+    section.cv {
+        width: 60vw;
+    }
+
+    .cv>h2 {
+        font-size: xx-large;
+    }
+
+
+    li a:hover {
+        font-size: larger;
+    }
 }
