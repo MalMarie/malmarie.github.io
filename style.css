@@ -100,9 +100,10 @@ section.cv {
     width: 60vw;
     margin: auto;
     justify-content: center;
-    margin-top: 10em;
     padding-top: 1em;
     border: solid 3px #5e90b1;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 .cv>h2 {
